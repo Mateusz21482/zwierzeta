@@ -1,20 +1,30 @@
 import zwierzeta.lion;
-import zwierzeta.parrot;
 import zwierzeta.tiger;
+import zwierzeta.parrot;
 
+/**
+ * Klasa demonstracyjna do wydawania dźwięków przez różne zwierzęta.
+ */
 public class wydawanedzwieki {
+
+    /**
+     * Metoda główna programu.
+     *
+     * @param args argumenty wiersza poleceń
+     */
     public static void main(String[] args) {
-        lion Lion = new lion();
-        tiger Tiger = new tiger();
-        parrot Parrot = new parrot();
+        lion lion = new lion();
+        tiger tiger = new tiger();
+        parrot parrot = new parrot();
 
-        Lion.printAnimalName();
-        Lion.roar();
+        lion.printAnimalName();
+        lion.roar();
 
-        Tiger.printAnimalName();
-        Tiger.growl();
+        tiger.printAnimalName();
+        tiger.growl();
 
-        Parrot.printAnimalName();
-        Parrot.speak();
+        parrot.printAnimalName();
+        parrot.speak();
     }
 }
+
